@@ -1,4 +1,4 @@
-# family-feud-charlie-game
+# shell-charlie-game
 # game title
 > short tagline
 
