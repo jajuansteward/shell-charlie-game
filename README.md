@@ -1,9 +1,12 @@
 # shell-charlie-game
 # game title
-> short tagline
+In this game, you have to find the shell under one of the 4 coconuts.
 
 ## authorship
-- name + link to your GitHub Profile, date, version
+- JaJuan Steward
+- [https://jajuansteward.github.io](https://github.com/jajuansteward)
+- Date: October 12, 2026
+- Version: 1.0.0
 
 ## user story 
 - **as a** ...be creative, the more specific the better 
@@ -24,6 +27,25 @@ Step into adventure as the Brave Knight vs. The Dumb Dragon. Watch out for the D
 - [ wiki/wireframe & issue/game ideas]
 
 ### project directory structure
+├── index.html
+├── README.md
+│
+├── assets/
+│   ├── css/
+│   │   ├── example.css
+│   │   └── style.css
+│   │
+│   └── js/
+│       ├── nameentering.js
+│       └── script.js
+│
+└── pages/
+    ├── footer.html
+    ├── nameentering.html
+    ├── nav-search.html
+    ├── nav-sticky.html
+    └── shell.html
+        
 
 ### tech stack
 
