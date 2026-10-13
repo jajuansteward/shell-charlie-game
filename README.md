@@ -9,7 +9,7 @@ In this game, you have to find the shell under one of the 4 coconuts.
 - Version: 1.0.0
 
 ## user story 
-- **as a** ...be creative, the more specific the better 
+- **as a**  
 - **i want** ...
 - **so that** ...
 
