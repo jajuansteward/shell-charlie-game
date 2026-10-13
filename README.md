@@ -1,15 +1,12 @@
 # shell-charlie-game
 # game title
-In this game, you have to find the shell under one of the 4 coconuts.
+> short tagline
 
 ## authorship
-- JaJuan Steward
-- [https://jajuansteward.github.io](https://github.com/jajuansteward)
-- Date: October 12, 2026
-- Version: 1.0.0
+- name + link to your GitHub Profile, date, version
 
 ## user story 
-- **as a**  
+- **as a** ...be creative, the more specific the better 
 - **i want** ...
 - **so that** ...
 
@@ -25,28 +22,8 @@ Step into adventure as the Brave Knight vs. The Dumb Dragon. Watch out for the D
 
 ### wireframe & game ideas
 - [ wiki/wireframe & issue/game ideas]
-- ### https://private-user-images.githubusercontent.com/259241619/666834336-479988d0-9d6c-45f8-8b6c-3fd7104ec8e4.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE5MDMxNjAsIm5iZiI6MTc5MTkwMjg2MCwicGF0aCI6Ii8yNTkyNDE2MTkvNjY2ODM0MzM2LTQ3OTk4OGQwLTlkNmMtNDVmOC04YjZjLTNmZDcxMDRlYzhlNC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxM1QxNDQ3NDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYmNmMDBhZTFkOWM4YzVlOTE4YjBhODgyM2YzODYyYjczOGQwZjMwMzc3ZjllMzMxMzQwZDkzZWNkMDJkODg5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZqcGVnIn0.h-lNwWATOf18aU58oa092rMf1RwEV-Uv9Rn7TposupU)
 
 ### project directory structure
-├── index.html
-├── README.md
-│
-├── assets/
-│   ├── css/
-│   │   ├── example.css
-│   │   └── style.css
-│   │
-│   └── js/
-│       ├── nameentering.js
-│       └── script.js
-│
-└── pages/
-    ├── footer.html
-    ├── nameentering.html
-    ├── nav-search.html
-    ├── nav-sticky.html
-    └── shell.html
-        
 
 ### tech stack
 
