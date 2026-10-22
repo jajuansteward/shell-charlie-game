@@ -1,16 +1,21 @@
-# shell-charlie-game
 # game title
+# shell-charlie-game
 > short tagline
+> The shell-charlie-game is finding which shell is it under after the shell has slid into different spots until it stops.
 
 ## authorship
+- JaJuan Steward | https://jajuansteward.github.io/shell-charlie-game/ | 10/22/26 | version 2.0
 - name + link to your GitHub Profile, date, version
 
 ## user story 
-- **as a** ...be creative, the more specific the better 
-- **i want** ...
-- **so that** ...
+- **as a** user of this game,   ...be creative, the more specific the better 
+- **I want** the user to find a jewel/shell under three coconuts
+- **so that** way the user playing the shell-charlie-game can find the shell. ...
 
 ## narrative
+> Shells and Coconuts WOW!
+> Step into a thinking and fast-pace game where you have to find which shell is under which coconut while it is sliding into different spots.
+
 a bit more wordy blurb about the game...
 
 > lasers, shotguns, & grenades, oh my! 
