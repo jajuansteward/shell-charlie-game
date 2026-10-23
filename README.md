@@ -29,10 +29,27 @@ Step into adventure as the Brave Knight vs. The Dumb Dragon. Watch out for the D
 - [ wiki/wireframe & issue/game ideas]
 
 ### project directory structure
+index.html
+│   README.md
+│   
+├───assets
+│   ├───css
+│   │       example.css
+│   │       style.css
+│   │       
+│   └───js
+│           script.js
+│           
+└───pages
+        AIshell.html
+        shell.html
 
 ### tech stack
 
 ### code snippet
+document.querySelectorAll(".shell").forEach((shell, index) => {
+        shell.innerHTML = "🥥<br>" + (index + 1);
+        shell.style.backgroundColor = "";
 
 ### future ideas.
 
