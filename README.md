@@ -4,8 +4,7 @@
 > The shell-charlie-game is finding which shell is it under after the shell has slid into different spots until it stops.
 
 ## authorship
-- JaJuan Steward | [https://jajuansteward.github.io/shell-charlie-game/](https://github.com/jajuansteward/AIshell.html) | 10/22/26 | version 2.0
-- name + link to your GitHub Profile, date, version
+- JaJuan Steward | (https://github.com/jajuansteward/AIshell.html) | 10/22/26 | version 2.0
 
 ## user story 
 - **as a** user of this game,   ...be creative, the more specific the better 
@@ -29,7 +28,7 @@ Step into adventure as the Brave Knight vs. The Dumb Dragon. Watch out for the D
 - [ wiki/wireframe & issue/game ideas]
 
 ### project directory structure
-'''
+```
     index.html
 │   README.md
 │   
@@ -44,13 +43,20 @@ Step into adventure as the Brave Knight vs. The Dumb Dragon. Watch out for the D
 └───pages
         AIshell.html
         shell.html
-
-### tech stack
+```
+## tech stack
+ - e.g., vsCode (live server, todo, prettier)
+ - HTML (emmet),
+ - CSS (normalize, bs5 & bs icons)
+ - js (jQ, jQui)
+ - GitHub (repo, readme/markdwon, wiki, issues, GitHub pages)
 
 ### code snippet
+```javascript
 document.querySelectorAll(".shell").forEach((shell, index) => {
         shell.innerHTML = "🥥<br>" + (index + 1);
         shell.style.backgroundColor = "";
+```
 
 ### future ideas.
 
