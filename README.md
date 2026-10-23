@@ -4,7 +4,7 @@
 > The shell-charlie-game is finding which shell is it under after the shell has slid into different spots until it stops.
 
 ## authorship
-- JaJuan Steward | https://jajuansteward.github.io/shell-charlie-game/ | 10/22/26 | version 2.0
+- JaJuan Steward | [https://jajuansteward.github.io/shell-charlie-game/](https://github.com/jajuansteward/AIshell.html) | 10/22/26 | version 2.0
 - name + link to your GitHub Profile, date, version
 
 ## user story 
@@ -29,7 +29,8 @@ Step into adventure as the Brave Knight vs. The Dumb Dragon. Watch out for the D
 - [ wiki/wireframe & issue/game ideas]
 
 ### project directory structure
-index.html
+'''
+    index.html
 │   README.md
 │   
 ├───assets
