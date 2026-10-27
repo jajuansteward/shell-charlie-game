@@ -1,33 +1,99 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shell Dashboard</title>
-    <link rel="stylesheet" href="../assets/css/style.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Charlie Game</title>
 
-  <button id="resetBtn" class="btn btn-outline-secondary">reset game</button>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: lightyellow;
+            padding: 30px;
+        }
 
-  <div class="row">
-    <div class="col-md-12">
-      <div id="shell" class="float-start"> shell.jpg</div>
-      <div class="shell" data-index="0">Shell 1</div>
-  <div class="shell" data-index="1">Shell 2</div>
-  <div class="shell" data-index="2">Shell 3</div>
-  <div class="shell" data-index="3">Shell 4</div>
-      
-      
-      
-      <!-- <div id="cat">🐈</div> -->
+        .shell {
+            font-size: 40px;
+            margin: 10px;
+            padding: 20px;
+            cursor: pointer;
+            border: 2px solid brown;
+            border-radius: 10px;
+        }
 
-      <div id="finish" class="float-end">🏁 FINISH</div>
+        button {
+            cursor: pointer;
+        }
+
+        #message {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Shell Charlie Game</h1>
+    <p>Find the hidden prize!</p>
+
+    <p id="message">Choose a shell to play.</p>
+
+    <div id="shells">
+        <button class="shell" onclick="chooseShell(0)">🥥<br>1</button>
+        <button class="shell" onclick="chooseShell(1)">🥥<br>2</button>
+        <button class="shell" onclick="chooseShell(2)">🥥<br>3</button>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/script.js"></script>
-  <body></body>
+    <p id="score">Score: 0</p>
+    <button onclick="resetGame()">Play Again</button>
+
+    <script>
+        let prize = Math.floor(Math.random() * 3);
+        let score = 0;
+        let played = false;
+
+        function chooseShell(choice) {
+            if (played) return;
+
+            played = true;
+
+            const shells = document.querySelectorAll(".shell");
+            const message = document.getElementById("message");
+
+            if (choice === prize) {
+                message.textContent = "You WIN! You found the prize!";
+                score++;
+            } else {
+                message.textContent =
+                    "Sorry! The prize was under shell " + (prize + 1) + ".";
+            }
+
+            shells[prize].innerHTML = "🎁<br>" + (prize + 1);
+            shells[prize].style.backgroundColor = "lightgreen";
+
+            if (choice !== prize) {
+                shells[choice].style.backgroundColor = "pink";
+            }
+
+            document.getElementById("score").textContent =
+                "Score: " + score;
+        }
+
+        function resetGame() {
+            prize = Math.floor(Math.random() * 3);
+            played = false;
+
+            document.getElementById("message").textContent =
+                "Choose a shell to play.";
+
+            document.querySelectorAll(".shell").forEach((shell, index) => {
+                shell.innerHTML = "🥥<br>" + (index + 1);
+                shell.style.backgroundColor = "";
+            });
+        }
+    </script>
+
+</body>
 </html>
