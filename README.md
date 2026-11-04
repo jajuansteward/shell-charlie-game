@@ -1,5 +1,4 @@
 # shell-charlie-game
-> short tagline
 > The shell-charlie-game is finding which shell is it under after the shell has slid into different spots until it stops.
 
 ## authorship
