@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Charlie Game</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: lightyellow;
+            padding: 30px;
+        }
+
+        .shell {
+            font-size: 40px;
+            margin: 10px;
+            padding: 20px;
+            cursor: pointer;
+            border: 2px solid brown;
+            border-radius: 10px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #message {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Shell Charlie Game</h1>
+    <p>Find the hidden prize!</p>
+
+    <p id="message">Choose a shell to play.</p>
+
+    <div id="shells">
+        <button class="shell" onclick="chooseShell(0)">🥥<br>1</button>
+        <button class="shell" onclick="chooseShell(1)">🥥<br>2</button>
+        <button class="shell" onclick="chooseShell(2)">🥥<br>3</button>
+    </div>
+
+    <p id="score">Score: 0</p>
+    <button onclick="resetGame()">Play Again</button>
+
+    <script>
+        let prize = Math.floor(Math.random() * 3);
+        let score = 0;
+        let played = false;
+
+        function chooseShell(choice) {
+            if (played) return;
+
+            played = true;
+
+            const shells = document.querySelectorAll(".shell");
+            const message = document.getElementById("message");
+
+            if (choice === prize) {
+                message.textContent = "You WIN! You found the prize!";
+                score++;
+            } else {
+                message.textContent =
+                    "Sorry! The prize was under shell " + (prize + 1) + ".";
+            }
+
+            shells[prize].innerHTML = "🎁<br>" + (prize + 1);
+            shells[prize].style.backgroundColor = "lightgreen";
+
+            if (choice !== prize) {
+                shells[choice].style.backgroundColor = "pink";
+            }
+
+            document.getElementById("score").textContent =
+                "Score: " + score;
+        }
+
+        function resetGame() {
+            prize = Math.floor(Math.random() * 3);
+            played = false;
+
+            document.getElementById("message").textContent =
+                "Choose a shell to play.";
+
+            document.querySelectorAll(".shell").forEach((shell, index) => {
+                shell.innerHTML = "🥥<br>" + (index + 1);
+                shell.style.backgroundColor = "";
+            });
+        }
+    </script>
+
+</body>
+</html>
